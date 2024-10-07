@@ -41,6 +41,7 @@ pipeline {
                 echo "Choice: ${params.CHOICE}"
 
                 echo "Password: ${params.PASSWORD}"
+                echo "this is github webhook"
             }
         }
     
