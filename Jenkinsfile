@@ -49,6 +49,8 @@ pipeline {
                 echo "this is github webhook"
             }
         }
+
+    }
         post { 
         always { 
             echo 'I will always say Hello again!'
@@ -59,7 +61,5 @@ pipeline {
         failure { 
             echo 'I will run only when pipeline is failure'
         }
-        }
-    
-    }
+      }
 }
