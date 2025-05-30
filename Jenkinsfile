@@ -4,7 +4,7 @@ pipeline {
     }
     options {
         timeout(time: 30, unit: 'MINUTES') //Runs the pipeline for 30 minutes, if it takes more time then pipeline will be failed
-        disableConcurrentBuilds()
+        disableConcurrentBuilds() //This will wait the build if the other builds are performed in the jenkins server
     }
     parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
