@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'AGENT-1' //Runs the jenkinsfile in the AGENT-1 node(instance)
+        label 'AGENT-1' //Runs the jenkinsfile in the AGENT-1 node(instance) and Jenkinsfile will be stored in/home/ec2-user/jenkins-agent directory
     }
     options {
         timeout(time: 30, unit: 'MINUTES') //Runs the pipeline for 30 minutes, if it takes more time then pipeline will be failed
