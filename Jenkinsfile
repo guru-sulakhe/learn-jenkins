@@ -1,9 +1,9 @@
 pipeline {
     agent {
-        label 'AGENT-1'
+        label 'AGENT-1' //Runs the jenkinsfile in the AGENT-1 node(instance)
     }
     options {
-        timeout(time: 30, unit: 'MINUTES') 
+        timeout(time: 30, unit: 'MINUTES') //Runs the pipeline for 30 minutes, if it takes more time then pipeline will be failed
         disableConcurrentBuilds()
     }
     parameters {
